@@ -62,8 +62,8 @@ setInterval(function() {
     gameOver();
   }
   // 判断小鸟是否通过洞口
-  if (isOverlap(bird, block)) {
-    if (isOverlap(bird, hole)) {
+  if (isOverlap(bird, block) || isOverlap(block, bird)) {
+    if (isOverlap(bird, hole) || isOverlap(hole, bird)) {
       count++;
     } else {
       gameOver();
@@ -103,7 +103,7 @@ function jump() {
     jumpCount++;
   }, 10);
 
-  if (isOverlap(bird, hole)) {
+  if (isOverlap(bird, hole) || isOverlap(hole, bird)) {
     score();
   }
 }
