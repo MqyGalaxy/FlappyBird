@@ -154,7 +154,7 @@ function level() {
 }
 
 function gameOver() {
-  window.location.href = "/";
+  window.location.href = "./";
   window.alert("Game Over! Score: " + scoreNumber);
   bird.style.top = 50 + "%";
   count = 0;
