@@ -8,6 +8,7 @@ body {
 
 .app_header {
   width: 1000px;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
