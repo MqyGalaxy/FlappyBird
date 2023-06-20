@@ -1,0 +1,62 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #00ccff;
+}
+
+.app_header {
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#game {
+  max-width: 1200px;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  margin: auto;
+}
+
+#block {
+  width: 100px;
+  height: 100%;
+  background-color: #00cc00;
+  position: relative;
+  left: 1200px;
+  animation: block 4s infinite linear;
+}
+
+#hole {
+  width: 100px;
+  height: 30%;
+  background-color: #00ccff;
+  position: relative;
+  left: 1200px;
+  top: -70%;
+  animation: block 4s infinite linear;
+}
+
+@keyframes block {
+  0% {
+    left: 120%;
+  }
+
+  100% {
+    left: -50%;
+  }
+}
+
+#character {
+  margin-left: 7%;
+  position: absolute;
+  top: 50%;
+  border-radius: 50%;
+}
+
+#character img {
+  width: 50px;
+}

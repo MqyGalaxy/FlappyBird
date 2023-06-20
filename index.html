@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html onclick="jump()" onkeydown="keyPress()">
+<html>
 
 <head>
+  <title>FlappyBird</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>FlappyBird</title>
   <link rel="stylesheet" href="/index.css" />
-  <link rel="stylesheet" href="flappybird.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -14,17 +13,19 @@
 
 <body>
   <div class="header">
-    <div class="app_header">
-      <p id="score">0</p>
-      <a onclick="pause()">Pause</a>
-    </div>
+    <img src="/app/bird0_0.png">
+    <div class="title">FlappyBird</div>
   </div>
-  <div id="game">
-    <div id="block"></div>
-    <div id="hole"></div>
-    <div id="character"><img id="birdImg" src="bird0_0.png"></div>
+  <div class="main">
+    <ul>
+      <li><a href="/app/">Start</a></li>
+      <li><a href="/help/">Help</a></li>
+      <li><a href="/about/">About</a></li>
+    </ul>
+  </div>
+  <div class="footer">
+    <a href="https://moeqy.com/en/" target="_blank" style="font-size: 10px;">moeqy.com</a>
   </div>
 </body>
-<script src="flappyBird.js"></script>
 
 </html>
