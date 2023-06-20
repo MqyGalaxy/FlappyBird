@@ -3,7 +3,7 @@ var block = document.getElementById("block");
 var hole = document.getElementById("hole");
 var bird = document.getElementById("character");
 var birdImg = document.getElementById("birdImg");
-var birdImgSrc = "/app/bird0_0.png"
+var birdImgSrc = "bird0_0.png"
 var scoreNumber = 0;
 var speed = 4;
 var historyTop = 0;
@@ -80,10 +80,10 @@ document.addEventListener("keydown", function(event) {
 
 // 鸟儿跳~
 function jump() {
-  if (birdImgSrc == "/app/bird0_0.png") {
-    birdImgSrc = "/app/bird0_2.png";
+  if (birdImgSrc == "bird0_0.png") {
+    birdImgSrc = "bird0_2.png";
   } else {
-    birdImgSrc = "/app/bird0_0.png";
+    birdImgSrc = "bird0_0.png";
   }
   birdImg.setAttribute("src", birdImgSrc);
   jumping = 1;
@@ -154,7 +154,7 @@ function level() {
 }
 
 function gameOver() {
-  window.location.href = "./";
+  window.location.href = "../";
   window.alert("Game Over! Score: " + scoreNumber);
   bird.style.top = 50 + "%";
   count = 0;
